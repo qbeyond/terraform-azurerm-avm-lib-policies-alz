@@ -1,0 +1,149 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/default_policy_values.json",
+    "defaults": [
+        {
+            "default_name": "qby_updmang_noMaintenanceConfigurationId",
+            "description": "No maintenaince configuration",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "noMaintenanceConfigurationId"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_managementSubscriptionId",
+            "description": "Management subscription for update management resources",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "managementSubscriptionId"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_managementResourceGroup",
+            "description": "Management resource group for update management resources",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "managementResourceGroup"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_location",
+            "description": "Location for update management resources",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "location"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_timeZone",
+            "description": "Time zone for update management resources",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "timeZone"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_osTypeArc",
+            "description": "OS type for Arc machines in update management",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "osTypeArc"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_osOffersLinux",
+            "description": "List of allowed OS offers for Linux VMs in update management",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "osOffersLinux"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_osSKUsLinux",
+            "description": "List of allowed OS SKUs for Linux VMs in update management",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "osSKUsLinux"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_osOffersWindows",
+            "description": "List of allowed OS offers for Windows VMs in update management",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "osOffersWindows"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_osSKUsWindows",
+            "description": "List of allowed OS SKUs for Windows VMs in update management",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "osSKUsWindows"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_effectLinux",
+            "description": "Effect for Linux VMs in update management policy",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "effectLinux"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        },
+        {
+            "default_name": "qby_updmang_effectWindows",
+            "description": "Effect for Windows VMs in update management policy",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "effectWindows"
+                    ],
+                    "policy_assignment_name": "QBY-Deploy-Update-Mgmt"
+                }
+            ]
+        }
+    ]
+}
