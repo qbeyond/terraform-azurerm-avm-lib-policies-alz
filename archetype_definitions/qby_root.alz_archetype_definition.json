@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/archetype_definition.json",
+  "name": "qby_root",
+  "policy_assignments": [],
+  "policy_definitions": [
+    "QBY-Config-Linux-Patch",
+    "QBY-Configure-Wind-Patch",
+    "QBY-Deploy-Updates",
+    "QBY-Deploy-Updates-Linux",
+    "QBY-Req-Sev-Group-Tag",
+    "QBY-Req-Update-Allow-Tag",
+    "QBY-Deploy-VM-Backup"
+  ],
+  "policy_set_definitions": [
+    "QBY-Deploy-Update-Mgmt"
+  ],
+  "role_definitions": []
+}
