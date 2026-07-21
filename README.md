@@ -10,7 +10,7 @@ It instead enriches the new [Azure Landing Zone Accelerator](https://azure.githu
 provider "alz" {
   library_references = [
     {
-      custom_url = "https://github.com/qbeyond/terraform-azurerm-avm-lib-policies-alz?ref=feature%2Finit"
+      custom_url = "github.com/qbeyond/terraform-azurerm-avm-lib-policies-alz?ref=feature%2Finit"
     }
   ]
 }
