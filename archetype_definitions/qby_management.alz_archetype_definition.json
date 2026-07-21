@@ -1,5 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/archetype_definition.json",
+  "base_archetype": "management",
   "name": "qby_management",
   "policy_assignments": [],
   "policy_definitions": [],

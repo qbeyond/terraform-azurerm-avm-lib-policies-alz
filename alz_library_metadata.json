@@ -4,5 +4,10 @@
     "display_name": "Custom QBY Policies",
     "description": "Custom Azure Policy definitions",
     "path": "",
-    "dependencies": []
+    "dependencies": [
+        {
+            "path": "platform/alz",
+            "ref": "2026.04.2"
+        }
+    ]
 }
