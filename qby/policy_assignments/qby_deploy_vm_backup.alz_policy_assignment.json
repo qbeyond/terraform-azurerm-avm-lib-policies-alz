@@ -10,7 +10,7 @@
         "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/placeholder/providers/Microsoft.Authorization/policyDefinitions/QBY-Deploy-VM-Backup",
         "parameters": {
             "location": {
-                "value": "northeurope"
+                "value": "${starter_location_01}"
             },
             "exclusionTagName": {
                 "value": "VMBackup"
