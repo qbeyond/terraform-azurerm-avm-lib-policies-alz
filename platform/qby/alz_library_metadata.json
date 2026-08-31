@@ -1,8 +1,0 @@
-{
-    "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/library_metadata.json",
-    "name": "QBY",
-    "display_name": "Custom QBY Policies",
-    "description": "Custom Azure Policy definitions",
-    "path": "platform/qby",
-    "dependencies": []
-}
