@@ -1,0 +1,65 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/default_policy_values.json",
+    "defaults": [
+        {
+            "default_name": "alz_budget_amount",
+            "description": "Budget amount for the Deploy-Budget policy assignment",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "amount"
+                    ],
+                    "policy_assignment_name": "Deploy-Budget"
+                }
+            ]
+        },
+        {
+            "default_name": "alz_budget_budgetName",
+            "description": "Budget name for the Deploy-Budget policy assignment",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "budgetName"
+                    ],
+                    "policy_assignment_name": "Deploy-Budget"
+                }
+            ]
+        },
+        {
+            "default_name": "alz_budget_contactEmails",
+            "description": "Contact emails for budget notifications",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "contactEmails"
+                    ],
+                    "policy_assignment_name": "Deploy-Budget"
+                }
+            ]
+        },
+        {
+            "default_name": "alz_budget_contactGroups",
+            "description": "Contact groups for budget notifications",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "contactGroups"
+                    ],
+                    "policy_assignment_name": "Deploy-Budget"
+                }
+            ]
+        },
+        {
+            "default_name": "alz_budget_contactRoles",
+            "description": "Contact roles for budget notifications",
+            "policy_assignments": [
+                {
+                    "parameter_names": [
+                        "contactRoles"
+                    ],
+                    "policy_assignment_name": "Deploy-Budget"
+                }
+            ]
+        }
+    ]
+}
