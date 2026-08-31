@@ -1,20 +1,29 @@
-# QBY AVM Library with policies for Azure Landing Zone
+# terraform-azurerm-avm-lib-policies-alz
 
-This library provides the reference set of Azure QBY baseline for Azure Landing Zones (ALZ) policies, archetypes, and management group architecture.
-  
+The QBY AVM Library supercedes the old [q.beyond Archetype Library](https://github.com/qbeyond/terraform-azurerm-archetype-lib)
+that was based off the (now deprecated) [Cloud Adoption Framework](https://github.com/Azure/terraform-azurerm-caf-enterprise-scale).
+It instead enriches the new [Azure Landing Zone Accelerator](https://azure.github.io/Azure-Landing-Zones/accelerator/) with useful
+Azure policy definitions and assignments, provided by q.beyond.
+
 ## Usage
-  
+
 ```terraform
 provider "alz" {
   library_references = [
     {
-      path = "platform/qby"
-      ref  = "0000.00.0" # Replace with the desired version
+      path = "platform/alz"
+      ref  = "2026.04.2" # Replace with the desired version
+    }
+    {
+      custom_url = "github.com/qbeyond/terraform-azurerm-avm-lib-policies-alz/qby" # Custom policies by QBY
+    },
+    {
+      custom_url = "github.com/qbeyond/terraform-azurerm-avm-lib-policies-alz/alz_extend" # Extends default Microsoft library
     }
   ]
 }
 ```
-  
+
 ## Architectures
   
 The following architectures are available in this library, please note that the diagrams denote the management group display name and, in brackets, the associated archetypes:
