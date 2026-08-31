@@ -1,0 +1,53 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/policy_assignment.json",
+    "name": "Deploy-Budget",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2022-06-01",
+    "properties": {
+        "description": "Deploy a default budget on all subscriptions under the assigned scope",
+        "displayName": "Deploy a default budget on all subscriptions under the assigned scope",
+        "enforcementMode": "Default",
+        "nonComplianceMessages": [
+            {
+                "message": "A default budget must be deployed on all subscriptions."
+            }
+        ],
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/placeholder/providers/Microsoft.Authorization/policyDefinitions/Deploy-Budget",
+        "parameters": {
+            "amount": {
+                "value": "1000"
+            },
+            "budgetName": {
+                "value": "budget-set-by-policy"
+            },
+            "contactEmails": {
+                "value": []
+            },
+            "contactGroups": {
+                "value": []
+            },
+            "contactRoles": {
+                "value": [
+                    "Owner",
+                    "Contributor"
+                ]
+            },
+            "effect": {
+                "value": "DeployIfNotExists"
+            },
+            "firstThreshold": {
+                "value": "90"
+            },
+            "secondThreshold": {
+                "value": "100"
+            },
+            "timeGrain": {
+                "value": "Monthly"
+            }
+        }
+    },
+    "location": "${starter_location_01}",
+    "identity": {
+        "type": "SystemAssigned"
+    }
+}

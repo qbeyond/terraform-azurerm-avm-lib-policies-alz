@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/library_metadata.json",
+    "name": "ALZ_extend",
+    "display_name": "Extension of the ALZ library by QBY",
+    "description": "Extends the default ALZ library",
+    "path": "ALZ_extend",
+    "dependencies": [
+        {
+            "path": "platform/alz",
+            "ref": "2026.04.2"
+        }
+    ]
+}

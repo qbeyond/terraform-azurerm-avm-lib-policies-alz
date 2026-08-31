@@ -1,0 +1,9 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/archetype_definition.json",
+  "base_archetype": "connectivity",
+  "name": "qby_connectivity",
+  "policy_assignments": [],
+  "policy_definitions": [],
+  "policy_set_definitions": [],
+  "role_definitions": []
+}

@@ -1,0 +1,82 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/policy_assignment.json",
+    "name": "QBY-Deploy-Update-Mgmt",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2022-06-01",
+    "properties": {
+        "description": "Deploys Azure Update Manager maintenance configuration to VMs.",
+        "displayName": "Deploy Update Management",
+        "enforcementMode": "Default",
+        "nonComplianceMessages": [
+            {
+                "message": "The tag 'update allowed' is set to 'no' or no update configuration is present",
+                "policyDefinitionReferenceId": "Configure update management for Linux virtual machines with a given tag using Azure Update Manager"
+            },
+            {
+                "message": "The tag 'update allowed' is set to 'no' or no update configuration is present",
+                "policyDefinitionReferenceId": "Configure update management for Windows virtual machines with a given tag using Azure Update Manager"
+            },
+            {
+                "message": "The 'PatchMode' must be set to 'AutomaticByPlatform' and 'bypassPlatformSafetyChecksOnUserSchedule' must be set to 'true' to enable the VM for Azure Update Manager",
+                "policyDefinitionReferenceId": "Configure the patch mode and bypassPlatformSafetyChecksOnUserSchedule setting of Windows VMs for Azure Update Manager"
+            },
+            {
+                "message": "The 'PatchMode' must be set to 'AutomaticByPlatform' and 'bypassPlatformSafetyChecksOnUserSchedule' must be set to 'true' to enable the VM for Azure Update Manager",
+                "policyDefinitionReferenceId": "Configure patch mode and bypassPlatformSafetyChecksOnUserSchedule setting of Linux VMs for Azure Update Manager"
+            }
+        ],
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/placeholder/providers/Microsoft.Authorization/policySetDefinitions/QBY-Deploy-Update-Mgmt",
+        "parameters": {
+            "noMaintenanceConfigurationId": {
+                "value": ""
+            },
+            "managementSubscriptionId": {
+                "value": ""
+            },
+            "managementResourceGroup": {
+                "value": ""
+            },
+            "location": {
+                "value": "${starter_location_01}"
+            },
+            "timeZone": {
+                "value": "W. Europe Standard Time"
+            },
+            "osTypeArc": {
+                "value": "None"
+            },
+            "osOffersLinux": {
+                "value": [
+                    "Disabled"
+                ]
+            },
+            "osSKUsLinux": {
+                "value": [
+                    "Disabled"
+                ]
+            },
+            "osOffersWindows": {
+                "value": [
+                    "Windows*"
+                ]
+            },
+            "osSKUsWindows": {
+                "value": [
+                    "2019-datacenter*",
+                    "2022-datacenter*",
+                    "2025-datacenter*"
+                ]
+            },
+            "effectWindows": {
+                "value": "DeployIfNotExists"
+            },
+            "effectLinux": {
+                "value": "Disabled"
+            }
+        }
+    },
+    "location": "${starter_location_01}",
+    "identity": {
+        "type": "SystemAssigned"
+    }
+}

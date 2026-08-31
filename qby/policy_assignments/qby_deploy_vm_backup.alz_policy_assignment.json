@@ -1,0 +1,39 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/policy_assignment.json",
+    "name": "QBY-Deploy-VM-Backup",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2022-06-01",
+    "properties": {
+        "description": "Configures Azure Backup on unprotected VMs.",
+        "displayName": "Deploy VM Backup",
+        "enforcementMode": "Default",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/placeholder/providers/Microsoft.Authorization/policyDefinitions/QBY-Deploy-VM-Backup",
+        "parameters": {
+            "location": {
+                "value": "${starter_location_01}"
+            },
+            "exclusionTagName": {
+                "value": "VMBackup"
+            },
+            "exclusionTagValue": {
+                "value": "Disabled"
+            },
+            "effect": {
+                "value": "DeployIfNotExists"
+            },
+            "activeBackupPolicy": {
+                "value": "QbyDefault"
+            },
+            "backupPolicyLogicalName": {
+                "value": ""
+            },
+            "rgLogicalNameOverride": {
+                "value": ""
+            }
+        }
+    },
+    "location": "${starter_location_01}",
+    "identity": {
+        "type": "SystemAssigned"
+    }
+}
